@@ -54,9 +54,6 @@ void turnOffLED();
 int main()
 {
  init_platform();
-// while( (*((uint32_t*) BTN_Base_Address) && (1))==0){
- //;
- //}
  while(1)
  {
 	 if( (*((uint32_t*) BTN_Base_Address) && (1))==0)
@@ -70,11 +67,7 @@ int main()
 		turnOffLED();
 
  }
-// while( (*((uint32_t*) BTN_Base_Address) && (1))==0){
-//	 turnOffLED();
 
- //}
- //turnOnLED();
  print("Hello World\n\r"); //by default may be omitted
  cleanup_platform(); //by default may be omitted
  return 0;
